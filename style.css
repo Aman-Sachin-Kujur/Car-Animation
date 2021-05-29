@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    animation: bodyshake linear .700s infinite;
+}
+
+.sky{
+    height: 100vh;
+    width: 100%;
+    
+    background-image: url(./Media/background.jpg);
+    background-position-y: -70px;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+}
+
+.mountains{
+    height: 60vh;
+    width: 100%;
+    background-image: url(./Media/mountains.png);
+    background-size: cover;
+    
+    position: absolute;
+    top: 60px;
+    
+    
+   
+}
+
+.track{
+    height: 30vh;
+    width: 700vw;
+    background-image: url(./Media/track.png);
+    
+    position: absolute;
+    top: 430px;
+    animation: carmove linear 13s infinite;
+   
+}
+
+.car{
+    height: 100px;
+    width: 380px;
+    background-image: url(./Media/car_body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 331px;
+    left: 300px;
+    animation: carshake linear .50s infinite;
+}
+
+.wheel{
+    animation: wheelshake linear .5s infinite;
+
+}
+
+.wheel1 img{
+    width: 60px;
+    position: absolute;
+    top: 47px;
+    left: 242px;
+    animation: wheelsrotation linear .16s infinite;
+
+}
+
+.wheel2 img{
+    width: 67px;
+    position: absolute;
+    top: 43px;
+    left: 48px;
+    animation: wheelsrotation linear .16s infinite;
+
+}
+
+.jets{
+    height: 100px;
+    width: 380px;
+    background-image: url(./Media/jet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    animation: jetshake linear .6s infinite;
+
+    
+}
+
+@keyframes wheelsrotation
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carmove
+{
+    100%{
+        transform: translateX(-500vw)
+    }
+}
+
+@keyframes carshake
+{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes bodyshake
+{
+    0%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes jetshake
+{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+
+@keyframes wheelshake
+{
+    0%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}
+
+
